@@ -1,0 +1,160 @@
+a{
+    color: white;
+}
+
+.fondo-nav{
+    margin-top: 0px;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.container h2:first-letter {
+    text-transform: uppercase;
+}
+
+.contorno {
+    border: 3px solid #DEE2E6;
+}
+
+.fondo-btn{
+    background-color: #F8F8F8;
+}
+
+.despliegue{
+    cursor: pointer;
+}
+
+.baner-principal{
+    height: 50vh;
+}
+
+.sombra-slider{
+    background-color: #01bdf2;
+    color: white;
+
+}
+
+.btn:hover{
+    font-weight: 400;
+}
+
+
+.puesto{
+    background-color: #0695d6;
+    color: white;
+}
+
+.btn-comando{
+    background-color: #28a745;
+    color: #fff;
+    border-color:#f9f9f900;
+    padding: 5px 15px 5px 15px;
+    border-radius: 4px;
+
+}
+
+.btn-comando:hover{
+    color: #fff;
+    background-color: #218838;
+    border-color:#f9f9f900;
+}
+
+.btn-close{
+    background-color: #38c172;
+    color: #fff;
+    border-color:#38c172;
+    padding: 5px 15px 5px 15px;
+    border-radius: 4px;
+}
+
+
+
+.btn-cerrar {
+    background-color: #767676;
+    color: #fff;
+    padding: 5px 15px 5px 15px;
+    border-radius: 4px;}
+.btn-cerrar:hover, .btn-default:focus {
+    background-color: #9d9d9d;
+    color: #fff; }
+
+
+
+
+#map{
+    height: 50vh;
+    widows: 50vh;
+}
+
+
+
+/*Medias*/
+@media (max-width: 576px){
+
+    .fondo-btn{
+       margin-left: 0%;
+       padding-left: 0%;
+    }
+    .corte{
+        display: block;
+    }
+    .operacion1.fa.fa-plus{
+        margin-top: 0.5em;
+    }
+
+    .operacion2.fa.fa-plus{
+        margin-bottom: 2%;
+    }
+
+    iframe{
+        width: 95%;
+    }
+
+    .btn.btn-default.btn-md.ml-0.h-100{
+        margin-top: 0%;
+    }
+    .logo{
+        width: 100%;
+        margin-left: 20%;
+    }
+    .pasolinea{
+        display: none;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 1024px){
+    .fondo-btn{
+        margin-left: 0%;
+        padding-left: 0%;
+    }
+    .corte{
+        display: block;
+    }
+    .operacion1.fa.fa-plus{
+        margin-top: 0.5em;
+    }
+
+    .input-group.small-search.input-sm{
+
+        margin-left: 0%;
+
+    }
+
+    .logo{
+        margin-left: 30%;
+    }
+
+    .argentina{
+
+
+    }
+
+    .medidaicopro{
+        height: 10%;
+    }
+
+    .margen{
+        margin-left: 1em;
+    }
+}
