@@ -26,3 +26,13 @@ Route::get('/formulario', function () {
 
 Route::post('/contactar', 'EmailController@contact')->name('contact');
 //Ruta que esta señalando nuestro formulario
+
+
+
+
+
+/*Route::get('/', function () {
+    return view('test');
+}); */
+
+

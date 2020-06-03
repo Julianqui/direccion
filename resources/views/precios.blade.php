@@ -9,7 +9,7 @@
                 <!--Navabar-->
                 <nav class="navbar navbar-expand-lg fondo-nav w-100 pl-0">
                     <div class="container collapse navbar-collapse" id="navbarNav">
-                        <ul class="breadcrumb ml-3" style="background-color: black; opacity: 0.7">
+                        <ul class="breadcrumb ml-3 mt-0 pt-0 mb-0 pb-0" style="background-color: black; opacity: 0.7">
                             <li class="nav-item active">
                                 <a class="nav-link pr-1 pl-1" style="color: white; font-family: Roboto" href="" >Inicio<span class="sr-only">(current)</span></a>
                             </li>
@@ -27,7 +27,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link pl-1" style="color: white" href="#">Dirección de informática</a>
+                                <a class="nav-link pl-1 pr-1" style="color: white" href="#">Dirección de informática</a>
                             </li>
 
                             <li class="nav-item active">
@@ -176,11 +176,11 @@
         </div>
     </section>
 
-    <section class="container">
+    {{--<section class="container">
         <div class="col-md-12 mt-3 d-flex justify-content-center">
             <button class="btn btn-success">Ingresa a la aplicacion</button>
         </div>
-    </section>
+    </section>--}}
 
     <div class="modal fade common-modal" id="modalLarge" tabindex="-1" role="dialog" aria-labelledby="modalLargeLabel"  style="z-index: 1050;">
         <div class="modal-dialog modal-lg" role="document">

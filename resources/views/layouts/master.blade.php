@@ -211,7 +211,7 @@
                 $(".pregunta3").addClass('puesto');
 
                 $(".respuesta1").hide();
-                $(".aca").removeClass('puesto');
+                $(".pregunta1").removeClass('puesto');
 
                 $(".respuesta2").hide();
                 $(".pregunta2").removeClass('puesto');
@@ -221,7 +221,7 @@
             }
             else {
                 $(".respuesta3").show();
-                $(".aca").addClass('panel:hover');
+                $(".pregunta3").addClass('puesto');
             }
         });
 

@@ -8,7 +8,7 @@
       <!--Navabar-->
           <section class="navbar navbar-expand-lg fondo-nav w-100">
             <div class="container collapse navbar-collapse" id="navbarNav">
-              <ul class="breadcrumb" style="background-color: black; opacity: 0.7">
+              <ul class="breadcrumb mb-0 pb-0 mt-0 pt-0" style="background-color: black; opacity: 0.7">
                 <li class="nav-item active">
                   <a class="nav-link pr-1 pl-1" style="color: white; font-family: Roboto" href="" >Inicio<span class="sr-only">(current)</span></a>
                 </li>
@@ -45,7 +45,7 @@
       </div>
     </section>
 
-
+      @include('include.message')
 
     <section class="p-b-0">
       <div class="container">
@@ -1162,12 +1162,14 @@
     </div>
 
 
-
+{{--Modal de contacto--}}
     <div class="modal fade bd-contacto-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal-contacto" style="z-index:1050;">
       <div class="modal-dialog modal-md mt-0 pt-0">
         <div class="modal-content">
           <div>
-            <form id="prodmodal" method="post" class="p-x-2 p-y-2" action="sendemailModal.php">
+            <form id="prodmodal" method="POST" class="p-x-2 p-y-2" action={{route('contact')}}>
+                {{--action="sendemailModal.php"--}}
+                @csrf
               <p class="text-center mb-0"><strong>Escribinos, ¡no seas timido!</strong></p>
               <div class="row">
                 <div class="col-sm-12 col-md-12">
@@ -1440,7 +1442,7 @@
             <div class="card tocame1">
               <div class="card-header despliegue" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 <h5 class="mb-0">
-                  <button class="collapsed border-0 fondo-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <button class="collapsed border-0 fondo-btn text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     Libro de reclamos y <span class="corte">sugerencias</span>
 
                   </button>
@@ -1553,7 +1555,7 @@
               <div>
                 <div class="" id="headingThree">
                   <h5>
-                    <a class="btn border-0 collapsed text-decoration-none pregunta3 panel w-100 text-left mb-0" href="" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    <a class="btn border-0 collapsed text-decoration-none pregunta3 panel w-100 text-left mb-0" href="" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" >
                       Automotizacion Robotica de Procesos
                     </a>
                   </h5>
@@ -1721,19 +1723,13 @@
 
 
 
-<script>
+{{--<script>
 
 
 
 
   $(document).ready(function(){
-      const tilesProvider= 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 
-      let map = L.map('map').setView([51.505, -0.09], 13)
-
-      L.tileLayer(tilesProvider, {
-          maxZoom: 18,
-      }).addTo(map),
 
 
 
@@ -1800,7 +1796,7 @@
         $(".pregunta3").addClass('puesto');
 
         $(".respuesta1").hide();
-        $(".aca").removeClass('puesto');
+        $(".pregunta1").removeClass('puesto');
 
         $(".respuesta2").hide();
         $(".pregunta2").removeClass('puesto');
@@ -1810,7 +1806,7 @@
       }
       else {
         $(".respuesta3").show();
-        $(".aca").addClass('panel:hover');
+        $(".pregunta3").addClass('puesto');
       }
     });
 
@@ -1827,7 +1823,7 @@
         $(".pregunta1").removeClass('puesto');
 
         $(".respuesta2").hide();
-        $(".pregunta3").removeClass('puesto');
+        $(".pregunta2").removeClass('puesto');
 
         $(".respuesta3").hide();
         $(".pregunta3").removeClass('puesto');
@@ -1995,5 +1991,5 @@
 /*Evitar que modal se cierre al clickear afuera*/
   /*$('#modalLarg').modal({backdrop: 'static', keyboard: false})*/
 
-</script>
+</script>--}}
 @endsection
